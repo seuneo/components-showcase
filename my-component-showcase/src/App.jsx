@@ -2,27 +2,31 @@ import { useState } from 'react'
 import './App.css'
 
 
+
 function App() {
+
+  const [isClicked, setClicked] = useState(false);
  
+  function clickButton(){
+    setClicked(true);
+
+  }
+
   return (
     <>
       <div>
 
         <div>
-        <button aria-label="follow" className="follow-button">
+        <button onClick={clickButton} aria-label="follow" className={isClicked ? "follow-button follow-clicked" :"follow-button follow-default" }>
           
-          <svg
-  className="heart"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 24 24"
-  
->
-  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+          <svg className="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
            2 5.42 4.42 3 7.5 3 9.24 3 10.91 3.81 12 5.08
            13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
            c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-</svg>
-<div>Follow</div>
+          </svg>
+<div className="follow-label">
+Follow</div>
 
         </button>
        

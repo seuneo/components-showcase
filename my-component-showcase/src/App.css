@@ -6,7 +6,7 @@
 }
 
 .follow-button{
-  background-color: rgb(141, 93, 230);
+  background-color: rgb(131, 87, 214);
   color: white;
   border-radius: 25px;
   padding: 9px 13px;
@@ -25,8 +25,12 @@
 
 }
 
+.follow-default:hover{
+background-color: rgb(110, 73, 183);
+}
+
 .follow-button:hover{
-  background-color: rgb(110, 73, 183);
+  
   cursor: pointer;
 }
 
@@ -51,5 +55,26 @@
 
 .follow-button:hover .heart{
   transform: scale(1.15);
+  fill:white;
+}
+
+.follow-clicked .follow-label{
+  
+  animation: disappear 0.7s ease forwards;
+
+}
+
+@keyframes disappear{
+  0%   { opacity: 1; }  
+  90%  { opacity: 0; }
+  100%  { display: none; opacity: 0;}
+}
+
+.follow-clicked{
+  background-color: rgb(97, 97, 97);
+}
+
+
+.follow-clicked .heart{
   fill:white;
 }
