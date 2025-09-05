@@ -6,23 +6,50 @@
 }
 
 .follow-button{
-  background-color: rgb(131, 96, 162);
+  background-color: rgb(141, 93, 230);
   color: white;
   border-radius: 25px;
-  padding: 8px 15px;
+  padding: 9px 13px;
   border-style: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
+}
+.follow-button div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
+  font-weight: 550;
+
 }
 
 .follow-button:hover{
-  background-color: rgb(107, 86, 125);
-  
+  background-color: rgb(110, 73, 183);
+  cursor: pointer;
 }
 
 
 .heart{
-  width: 18px;
+  stroke:white;
+  fill: none;
+  stroke-width: 2.5px;
+  width: 16px;
+  transition: transform 0.3s;
+  animation: bounceIn 0.7s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes bounceIn {
+  0%   { transform: scale(0); opacity: 0; }
+  40%  { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.follow-button:hover .heart{
+  transform: scale(1.15);
+  fill:white;
 }
