@@ -26,8 +26,8 @@
 }
 
 @keyframes changeGold {
-  0%   { background-color: rgb(211, 183, 92) }
-  90%   { background-color: rgb(210, 183, 92)  }
+  0%   { background-color: rgb(225, 209, 158) }
+  90%   { background-color: rgb(228, 202, 117)  }
   100%   { background-color: rgb(83, 80, 80)  }
 }
 
@@ -46,7 +46,7 @@ background-color: rgb(110, 73, 183);
 }
 
 .follow-button:hover{
-  
+  background-color: rgb(93, 66, 174);
   cursor: pointer;
 }
 
