@@ -17,7 +17,7 @@ function App() {
       <div>
 
         <div>
-        <button onClick={clickButton} aria-label="follow" className={isClicked ? "follow-button follow-clicked" :"follow-button follow-default" }>
+        <button onClick={clickButton} aria-label="follow" className={isClicked ? "follow-button follow-clicked" :"follow-button" }>
           
           <svg className="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
