@@ -100,7 +100,24 @@ background-color: rgb(110, 73, 183);
 @keyframes reappear{
   
   0%   {  fill: black; stroke: black;}
-  40%   { fill: rgb(83, 80, 80); stroke: rgb(83, 80, 80);}
-  
+  40%   { fill: rgb(83, 80, 80); stroke: rgb(83, 80, 80);}  
   100%  {  fill:white;}
+}
+
+.heart-break{
+  width: 16px;
+  padding: 0;
+  margin: 0;
+}
+.follow-button .heart-break{
+  display: none;
+}
+
+.follow-button.follow-clicked:hover .heart{
+  display: none;
+
+}
+
+.follow-button.follow-clicked:hover .heart-break{
+  display:inline-block;
 }
